@@ -1,0 +1,6 @@
+# Dead Pixel Detective - Python Build Script Dependencies
+# This file is for the build script only, not the Android app.
+# The Android app uses Gradle for dependency management.
+
+# No external dependencies required for the build script
+# Python 3.6+ standard library is sufficient

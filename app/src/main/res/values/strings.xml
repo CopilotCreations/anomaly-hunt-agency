@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dead Pixel Detective</string>
+    
+    <!-- Menu strings -->
+    <string name="menu_play">Play</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_how_to_play">How to Play</string>
+    <string name="menu_about">About</string>
+    
+    <!-- Game strings -->
+    <string name="level_label">Level %d</string>
+    <string name="score_label">Score: %d</string>
+    <string name="attempts_remaining">Attempts: %d</string>
+    <string name="tap_to_find">Tap where you see the anomaly</string>
+    <string name="found_anomaly">Found it!</string>
+    <string name="missed_anomaly">Not quite…</string>
+    <string name="level_complete">Level Complete!</string>
+    <string name="game_over">Game Over</string>
+    <string name="next_level">Next Level</string>
+    <string name="try_again">Try Again</string>
+    <string name="back_to_menu">Back to Menu</string>
+    
+    <!-- Settings strings -->
+    <string name="high_contrast_mode">High Contrast Mode</string>
+    <string name="reduced_motion">Reduced Motion</string>
+    <string name="haptic_feedback">Haptic Feedback</string>
+    <string name="sound_effects">Sound Effects</string>
+    <string name="show_hints">Show Hints</string>
+    
+    <!-- How to play strings -->
+    <string name="how_to_play_intro">Hunt for subtle visual anomalies hidden on your screen!</string>
+    <string name="how_to_play_tip1">• Look for pixels that seem slightly off</string>
+    <string name="how_to_play_tip2">• Try changing your screen brightness</string>
+    <string name="how_to_play_tip3">• Rotate your device to reveal hidden anomalies</string>
+    <string name="how_to_play_tip4">• Some anomalies only appear at certain times</string>
+    <string name="how_to_play_tip5">• Watch for subtle flickering or color shifts</string>
+    
+    <!-- About strings -->
+    <string name="about_version">Version 1.0.0</string>
+    <string name="about_description">A perception-based puzzle game where you hunt for subtle visual anomalies.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    
+    <!-- Accessibility strings -->
+    <string name="content_description_menu">Main menu</string>
+    <string name="content_description_settings">Settings</string>
+    <string name="content_description_game_canvas">Game area - tap to find anomalies</string>
+    <string name="content_description_close">Close</string>
+    
+    <!-- Ad strings -->
+    <string name="ad_loading">Loading…</string>
+</resources>

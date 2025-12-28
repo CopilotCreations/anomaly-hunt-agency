@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary colors -->
+    <color name="primary">#1A1A2E</color>
+    <color name="primary_variant">#16213E</color>
+    <color name="secondary">#0F3460</color>
+    <color name="secondary_variant">#E94560</color>
+    
+    <!-- Background colors -->
+    <color name="background">#0A0A0F</color>
+    <color name="surface">#1A1A2E</color>
+    <color name="error">#CF6679</color>
+    
+    <!-- Text colors -->
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="on_background">#E0E0E0</color>
+    <color name="on_surface">#E0E0E0</color>
+    <color name="on_error">#000000</color>
+    
+    <!-- Game-specific colors -->
+    <color name="anomaly_highlight">#FF4444</color>
+    <color name="success_green">#4CAF50</color>
+    <color name="warning_yellow">#FFC107</color>
+    <color name="heatmap_cold">#3F51B5</color>
+    <color name="heatmap_warm">#FF5722</color>
+    <color name="heatmap_hot">#F44336</color>
+    
+    <!-- High contrast mode colors -->
+    <color name="high_contrast_background">#000000</color>
+    <color name="high_contrast_foreground">#FFFFFF</color>
+    <color name="high_contrast_accent">#FFFF00</color>
+</resources>

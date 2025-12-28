@@ -1,0 +1,34 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#0F3460"
+        android:pathData="M54,54m-40,0a40,40 0,1 1,80 0a40,40 0,1 1,-80 0"/>
+    
+    <!-- Magnifying glass body -->
+    <path
+        android:fillColor="#E94560"
+        android:pathData="M44,44m-18,0a18,18 0,1 1,36 0a18,18 0,1 1,-36 0"/>
+    
+    <!-- Magnifying glass inner -->
+    <path
+        android:fillColor="#1A1A2E"
+        android:pathData="M44,44m-14,0a14,14 0,1 1,28 0a14,14 0,1 1,-28 0"/>
+    
+    <!-- Dead pixel indicator -->
+    <path
+        android:fillColor="#E94560"
+        android:pathData="M42,42h4v4h-4z"/>
+    
+    <!-- Magnifying glass handle -->
+    <path
+        android:strokeColor="#E94560"
+        android:strokeWidth="6"
+        android:strokeLineCap="round"
+        android:pathData="M56,56L72,72"/>
+    
+</vector>
