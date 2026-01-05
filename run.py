@@ -20,12 +20,24 @@ from pathlib import Path
 
 
 def get_project_root():
-    """Get the project root directory."""
+    """Get the project root directory.
+
+    Returns:
+        Path: The absolute path to the project root directory.
+    """
     return Path(__file__).parent.absolute()
 
 
 def run_gradle(command, *args):
-    """Run a Gradle command."""
+    """Run a Gradle command.
+
+    Args:
+        command: The Gradle command to execute (e.g., 'assembleDebug').
+        *args: Additional arguments to pass to the Gradle command.
+
+    Returns:
+        bool: True if the command executed successfully, False otherwise.
+    """
     project_root = get_project_root()
     
     # Determine gradlew executable based on OS
@@ -50,43 +62,74 @@ def run_gradle(command, *args):
 
 
 def build_debug():
-    """Build the debug APK."""
+    """Build the debug APK.
+
+    Returns:
+        bool: True if the build succeeded, False otherwise.
+    """
     print("Building Debug APK...")
     return run_gradle("assembleDebug", "--no-daemon")
 
 
 def build_release():
-    """Build the release APK."""
+    """Build the release APK.
+
+    Returns:
+        bool: True if the build succeeded, False otherwise.
+    """
     print("Building Release APK...")
     return run_gradle("assembleRelease", "--no-daemon")
 
 
 def run_tests():
-    """Run unit tests."""
+    """Run unit tests.
+
+    Returns:
+        bool: True if all tests passed, False otherwise.
+    """
     print("Running Unit Tests...")
     return run_gradle("test", "--no-daemon")
 
 
 def run_lint():
-    """Run lint checks."""
+    """Run lint checks.
+
+    Returns:
+        bool: True if lint checks passed, False otherwise.
+    """
     print("Running Lint...")
     return run_gradle("lint", "--no-daemon")
 
 
 def install_debug():
-    """Install debug APK on connected device."""
+    """Install debug APK on connected device.
+
+    Returns:
+        bool: True if installation succeeded, False otherwise.
+    """
     print("Installing Debug APK...")
     return run_gradle("installDebug", "--no-daemon")
 
 
 def clean():
-    """Clean build outputs."""
+    """Clean build outputs.
+
+    Returns:
+        bool: True if clean succeeded, False otherwise.
+    """
     print("Cleaning build outputs...")
     return run_gradle("clean", "--no-daemon")
 
 
 def check_environment():
-    """Check if the development environment is properly configured."""
+    """Check if the development environment is properly configured.
+
+    Verifies that ANDROID_HOME/ANDROID_SDK_ROOT is set and valid,
+    and that Java is installed and accessible.
+
+    Returns:
+        bool: True if environment is properly configured, False otherwise.
+    """
     issues = []
     
     # Check ANDROID_HOME
@@ -119,6 +162,11 @@ def check_environment():
 
 
 def main():
+    """Main entry point for the build and run script.
+
+    Parses command-line arguments and executes the requested build command.
+    Supports building, testing, linting, installing, and cleaning operations.
+    """
     parser = argparse.ArgumentParser(
         description="Dead Pixel Detective - Build and Run Script",
         formatter_class=argparse.RawDescriptionHelpFormatter,
